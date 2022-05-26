@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aboutus',
@@ -27,9 +28,13 @@ public p6:any="Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu v
 public b:any="Read More";
 public h:any="WHAT WE OFFER";
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
 
+  ourServ(){
+    
+this.route.navigateByUrl('ourServices')
+  }
 }

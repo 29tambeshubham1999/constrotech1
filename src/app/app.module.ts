@@ -16,6 +16,7 @@ import { Home1Component } from './home/home1/home1.component';
 import { HeaderComponent } from './header-footer/header/header.component';
 import { FooterComponent } from './header-footer/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import {HttpClientModule} from '@angular/common/http';
     HomeModule,
     OurServicesModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

@@ -8,10 +8,10 @@ import { ResidentialComponent } from './residential/residential.component';
 
 const routes: Routes = [
   {path:'', component:Portfolio1Component},
-  {path:'portfolio/commercial', component:CommercialComponent},
-  {path:'portfolio/educational', component:EducationalComponent},
-  {path:'portfolio/industrial', component:IndustrialComponent},
-  {path:'portfolio/residential', component:ResidentialComponent}
+  {path:'commercial', component:CommercialComponent},
+  {path:'educational', component:EducationalComponent},
+  {path:'industrial', component:IndustrialComponent},
+  {path:'residential', component:ResidentialComponent}
 ];
 
 @NgModule({

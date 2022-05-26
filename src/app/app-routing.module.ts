@@ -6,7 +6,7 @@ const routes: Routes = [
   {path:'ourServices', loadChildren:()=> import ('./service/our-services/our-services.module').then(mod=>mod.OurServicesModule)},
   {path:'cities', loadChildren:()=> import ('./city/cities/cities.module').then(mod=>mod.CitiesModule)},
   {path:'contactUs', loadChildren:()=> import('./contact/contact-us/contact-us.module').then(mod=>mod.ContactUsModule)},
-  {path:'portfolio', loadChildren:()=> import('./portfolio/portfolio.module').then(mod=>mod.PortfolioModule)}
+  {path:'portFolio', loadChildren:()=> import('./portfolio/portfolio.module').then(mod=>mod.PortfolioModule)}
 
 ];
 

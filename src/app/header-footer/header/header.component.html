@@ -49,10 +49,10 @@
             Portfolio
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" routerLink="portfolio/commercial">COMMERCIAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/educational">EDUCATIONAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/industrial">INDUSTRIAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/residential">RESIDENTIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/commercial">COMMERCIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/educational">EDUCATIONAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/industrial">INDUSTRIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/residential">RESIDENTIAL</a></li>
           </ul>
         </div>
 
@@ -87,3 +87,10 @@
     </div>
   </div>
 </nav>
+
+<tbody>
+  <tr *ngFor="let item of companies; let i =index">
+     <td>{{i}}</td>
+     <td>{{item.name}}</td>
+  </tr>
+</tbody>

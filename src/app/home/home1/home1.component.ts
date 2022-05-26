@@ -29,4 +29,8 @@ public   :any="";
 //   console.log('portfolio is working');
 //   this.route.navigate(['home/ourServices']);
 // }
+
+port(){
+  this.route.navigate(['portFolio/commercial'])
+}
 }
